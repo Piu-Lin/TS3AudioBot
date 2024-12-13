@@ -6,20 +6,20 @@
 				id="ts3ab-logo"
 				tag="router-link"
 				:to="{ path: '/' }"
-			>TS3AudioBot</b-navbar-item>
+			>音乐播放器</b-navbar-item>
 		</template>
 		<template slot="start">
 			<b-navbar-item tag="router-link" :to="{ path: '/overview' }">
 				<b-icon icon="view-dashboard"></b-icon>
-				<span>Overview</span>
+				<span>查看服务器运行状态</span>
 			</b-navbar-item>
 			<b-navbar-item tag="router-link" :to="{ path: '/bots' }">
 				<b-icon icon="robot"></b-icon>
-				<span>Bots</span>
+				<span>机器人列表</span>
 			</b-navbar-item>
 			<b-navbar-item tag="router-link" :to="{ path: '/openapi' }">
 				<b-icon icon="api"></b-icon>
-				<span>Api</span>
+				<span>控制台指令</span>
 			</b-navbar-item>
 		</template>
 
@@ -30,47 +30,17 @@
 					<span class="is-hidden-desktop">Visit our Project</span>
 				</b-navbar-item>
 			</b-tooltip>
-
-			<b-tooltip label="Report a bug" position="is-bottom">
-				<b-navbar-item
-					tag="a"
-					href="https://github.com/Splamy/TS3AudioBot/issues/new/choose"
-					target="_blank"
-				>
-					<b-icon icon="bug"></b-icon>
-					<span class="is-hidden-desktop">Report a bug</span>
-				</b-navbar-item>
-			</b-tooltip>
-
-			<b-tooltip label="Chat or ask for help" position="is-bottom">
-				<b-navbar-item
-					tag="a"
-					href="https://gitter.im/TS3AudioBot/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link"
-					target="_blank"
-				>
-					<b-icon icon="account-multiple"></b-icon>
-					<span class="is-hidden-desktop">Chat or ask for help</span>
-				</b-navbar-item>
-			</b-tooltip>
-
-			<b-tooltip label="Support this Project" position="is-bottom">
-				<b-navbar-item tag="a" href="https://www.patreon.com/bePatron?u=11604963" target="_blank">
-					<b-icon icon="account-heart"></b-icon>
-					<span class="is-hidden-desktop">Support this Project</span>
-				</b-navbar-item>
-			</b-tooltip>
-
 			<b-tooltip label="Site Settings" position="is-bottom">
 				<b-navbar-item tag="a" @click.native="openSiteSettings()">
 					<b-icon icon="cog"></b-icon>
-					<span class="is-hidden-desktop">Site Settings</span>
+					<span class="is-hidden-desktop">网站设置</span>
 				</b-navbar-item>
 			</b-tooltip>
 
 			<b-tooltip label="Login" position="is-bottom">
 				<b-navbar-item tag="router-link" :to="{ path: '/' }">
 					<b-icon icon="shield-key"></b-icon>
-					<span class="is-hidden-desktop">Login</span>
+					<span class="is-hidden-desktop">登陆</span>
 				</b-navbar-item>
 			</b-tooltip>
 		</template>

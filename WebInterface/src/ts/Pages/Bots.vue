@@ -10,8 +10,8 @@
 		<section class="field">
 			<b-field label="Actions">
 				<div class="buttons">
-					<b-button icon-left="plus" class="is-success" @click="modalCreateBot = true">Create</b-button>
-					<b-button icon-left="flash" class="is-success" @click="modalQuickConnect = true">Quick connect</b-button>
+					<b-button icon-left="plus" class="is-success" @click="modalCreateBot = true">创建机器人</b-button>
+					<b-button icon-left="flash" class="is-success" @click="modalQuickConnect = true">快速链接歌单[未完成]</b-button>
 				</div>
 			</b-field>
 
@@ -19,9 +19,9 @@
 				<b-field grouped group-multiline>
 					<b-input v-model="showFilter" placeholder="Filter by name and server" expanded></b-input>
 					<b-field>
-						<b-checkbox-button v-model="showState" native-value="Connected" type="is-success">Connected</b-checkbox-button>
-						<b-checkbox-button v-model="showState" native-value="Connecting" type="is-warning">Connecting</b-checkbox-button>
-						<b-checkbox-button v-model="showState" native-value="Offline" type="is-danger">Offline</b-checkbox-button>
+						<b-checkbox-button v-model="showState" native-value="Connected" type="is-success">链接成功</b-checkbox-button>
+						<b-checkbox-button v-model="showState" native-value="Connecting" type="is-warning">链接中</b-checkbox-button>
+						<b-checkbox-button v-model="showState" native-value="Offline" type="is-danger">离线</b-checkbox-button>
 					</b-field>
 
 					<b-tooltip class="control" label="Clear Filter">
@@ -98,19 +98,19 @@
 
 							<b-dropdown-item v-show="false" :disabled="props.row.Name == null" aria-role="listitem">
 								<b-icon icon="content-copy" />
-								<span>Copy</span>
+								<span>复制</span>
 							</b-dropdown-item>
 							<b-dropdown-item v-show="false" :disabled="props.row.Name == null" aria-role="listitem">
 								<b-icon icon="pencil" />
-								<span>Rename</span>
+								<span>重命名</span>
 							</b-dropdown-item>
 							<b-dropdown-item v-if="props.row.Name" @click="askDeleteBot(props.row.Name)">
 								<b-icon icon="delete" type="is-danger" />
-								<span>Delete</span>
+								<span>删除</span>
 							</b-dropdown-item>
 							<b-dropdown-item v-show="false" v-else>
 								<b-icon icon="content-save" type="is-success" />
-								<span>Save</span>
+								<span>保存</span>
 							</b-dropdown-item>
 						</b-dropdown>
 					</div>

@@ -21,7 +21,7 @@
 								<b-icon icon="plus" size="is-large" />
 							</div>
 						</a>
-						<p class="card-title title is-5">Create</p>
+						<p class="card-title title is-5">创建</p>
 					</div>
 				</div>
 

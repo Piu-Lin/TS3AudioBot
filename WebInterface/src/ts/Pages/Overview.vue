@@ -4,23 +4,23 @@
 			<div class="tile is-vertical">
 				<div class="tile is-parent">
 					<div class="tile is-child notification">
-						<span class="title">About</span>
+						<span class="title">关于</span>
 						<div class="formcontent">
 							<div class="formdatablock">
-								<div>Version:</div>
+								<div>版本号:</div>
 								<div>{{aboutData.Version}}</div>
 							</div>
 							<div class="formdatablock">
-								<div>Branch:</div>
+								<div>分支:</div>
 								<div>{{aboutData.Branch}}</div>
 							</div>
 							<div class="formdatablock">
-								<div>CommitHash:</div>
+								<div>提交哈希值:</div>
 								<div>{{aboutData.CommitSha}}</div>
 							</div>
 							<br />
 							<div class="formdatablock">
-								<div>Uptime:</div>
+								<div>更新日:</div>
 								<div>{{aboutUptime}}</div>
 							</div>
 						</div>

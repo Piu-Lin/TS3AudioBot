@@ -3,8 +3,7 @@
 		<section class="hero is-primary" style="margin-top:3em; margin-bottom:5em;">
 			<div class="hero-body">
 				<div class="container">
-					<h1 class="title">TS3Audiobot</h1>
-					<h2 class="subtitle">The selfhosted music bot of your choice!</h2>
+					<h1 class="title">音乐机器人</h1>
 				</div>
 			</div>
 		</section>
@@ -13,7 +12,7 @@
 			<div class="tile">
 				<div class="tile is-parent">
 					<div class="tile is-child notification is-primary has-text-centered">
-						<h1 class="title">Login</h1>
+						<h1 class="title">登陆</h1>
 						<b-field>
 							<div class="control is-expanded is-clearfix">
 								<input
@@ -46,21 +45,14 @@
 				<router-link to="overview" tag="a" class="tile is-parent">
 					<div class="tile is-child notification is-success has-text-centered">
 						<b-icon icon="view-dashboard" size="is-large"></b-icon>
-						<div class="content">Jump to the Infoboard</div>
+						<div class="content">跳转至公告板</div>
 					</div>
 				</router-link>
 
 				<router-link to="bots" tag="a" class="tile is-parent">
 					<div class="tile is-child notification is-success has-text-centered">
 						<b-icon icon="robot" size="is-large"></b-icon>
-						<div class="content">Jump to your Bots overview</div>
-					</div>
-				</router-link>
-
-				<router-link to tag="a" class="tile is-parent">
-					<div class="tile is-child notification is-success has-text-centered">
-						<b-icon icon="emoticon-cool-outline" size="is-large"></b-icon>
-						<div class="content">Do something cool...</div>
+						<div class="content">跳转至机器人列表</div>
 					</div>
 				</router-link>
 			</div>

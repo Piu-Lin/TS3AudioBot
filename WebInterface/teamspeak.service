@@ -1,0 +1,20 @@
+[Unit]
+Description=TeamSpeak
+After=network.target
+
+[Service]
+User=teamspeak
+WorkingDirectory=/home/teamspeak/
+ExecStart=/home/teamspeak/ts3server_startscript.sh start
+ExecStop=/home/teamspeak/ts3server_startscript.sh stop
+RestartSec=15
+Restart=always
+PIDFile=/home/teamspeak/ts3server.pid
+
+[Install]
+WantedBy=multi-user.target
+
+
+wget https://mirrors.tuna.tsinghua.edu.cn/debian/pool/main/o/openssl/libssl1.1_1.1.1n-0%2Bdeb11u5_amd64.deb
+ 
+sudo dpkg -i libssl1.1_1.1.1n-0+deb11u5_amd64.deb
